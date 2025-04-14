@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Ankieta z dźwiękiem</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px auto;
+      max-width: 700px;
+      padding: 20px;
+      line-height: 1.6;
+      background: #f9f9f9;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    iframe {
+      width: 100%;
+      height: 800px;
+      border: none;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Proszę posłuchać nagrania i wypełnić ankietę</h1>
+
+  <audio autoplay controls>
+    <source src="media/nagranie.mp3" type="audio/mpeg">
+    Twoja przeglądarka nie obsługuje odtwarzacza audio.
+  </audio>
+
+  <!-- Wklej tutaj swój link z formularza Google -->
+  <iframe src="https://docs.google.com/forms/d/e/TWOJ-ID/viewform?embedded=true">
+    Ładowanie formularza...
+  </iframe>
+
+</body>
+</html>
